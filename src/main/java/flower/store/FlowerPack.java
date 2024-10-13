@@ -13,8 +13,8 @@ public class FlowerPack {
     /**
      * Constructs a FlowerPack with the specified flower and amount.
      *
-     * @param flower the flower contained in the pack, must not be null
-     * @param amount the number of flowers in the pack, must be positive
+     * @param flowerParam the flower contained in the pack, must not be null
+     * @param amountParam the number of flowers in the pack, must be positive
      */
     public FlowerPack(final Flower flowerParam, final int amountParam) {
         this.flower = flowerParam;

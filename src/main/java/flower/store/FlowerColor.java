@@ -25,7 +25,7 @@ public enum FlowerColor {
     /**
      * Constructs a FlowerColor with the specified string representation.
      *
-     * @param colorCode the string representation of the color
+     * @param code the string representation of the color
      */
     FlowerColor(final String code) {
         this.colorCode = code;
