@@ -19,6 +19,6 @@ public class Store {
 
     private boolean bucketHasFlowerType(FlowerBucket bucket, FlowerType type) {
         return bucket.getFlowerPacks().stream()
-                     .anyMatch(pack -> pack.getFlower().getFlowerType() == type);
+.anyMatch(pack -> pack.getFlower().getFlowerType() == type);
     }
 }

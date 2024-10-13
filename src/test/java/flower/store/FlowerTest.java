@@ -64,12 +64,12 @@ public class FlowerTest {
 
     @Test
     public void testRosePrice() {
-        Assertions.assertEquals(50, rose.getPrice());
+        Assertions.assertEquals(ROSE_PRICE, rose.getPrice());
     }
 
     @Test
     public void testRoseSepalLength() {
-        Assertions.assertEquals(2.0, rose.getSepalLength());
+        Assertions.assertEquals(ROSE_SEPAL_LENGTH, rose.getSepalLength());
     }
 
     // Tests for Chamomile class
@@ -85,12 +85,13 @@ public class FlowerTest {
 
     @Test
     public void testChamomilePrice() {
-        Assertions.assertEquals(30, chamomile.getPrice());
+        Assertions.assertEquals(CHAMOMILE_PRICE, chamomile.getPrice());
     }
 
     @Test
     public void testChamomileSepalLength() {
-        Assertions.assertEquals(5.5, chamomile.getSepalLength());
+        Assertions.assertEquals(CHAMOMILE_SEPAL_LENGTH, 
+        chamomile.getSepalLength());
     }
 
     // Tests for Tulip class
@@ -106,12 +107,12 @@ public class FlowerTest {
 
     @Test
     public void testTulipPrice() {
-        Assertions.assertEquals(40, tulip.getPrice());
+        Assertions.assertEquals(TULIP_PRICE, tulip.getPrice());
     }
 
     @Test
     public void testTulipSepalLength() {
-        Assertions.assertEquals(5.0, tulip.getSepalLength());
+        Assertions.assertEquals(TULIP_SEPAL_LENGTH, tulip.getSepalLength());
     }
 
     // Tests for FlowerPack class
@@ -122,7 +123,7 @@ public class FlowerTest {
 
     @Test
     public void testFlowerPackQuantity() {
-        Assertions.assertEquals(10, flowerPack.getAmount());
+        Assertions.assertEquals(FLOWER_PACK_QUANTITY, flowerPack.getAmount());
     }
 
     @Test
