@@ -18,4 +18,12 @@ public class Flower {
     public String getColor() {
         return color.toString();
     }
+
+    public void setColor(FlowerColor color) {
+        this.color = color;
+    }
+
+    public void setFlowerType(FlowerType flowerType) {
+        this.flowerType = flowerType;
+}
 }
