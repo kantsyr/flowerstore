@@ -4,9 +4,9 @@ package flower.store;
  */
 public enum FlowerType {
     /** Type representing a chamomile flower. */
-    CHAMOMILE, 
+    CHAMOMILE,
     /** Type representing a rose flower. */
-    ROSE, 
+    ROSE,
     /** Type representing a tulip flower. */
     TULIP;
 }

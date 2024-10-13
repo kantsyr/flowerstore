@@ -36,10 +36,10 @@ public class Store {
      *
      * @param bucket the flower bucket to check; should not be null
      * @param type the type of flower to check for; should not be null
-     * @return true if the bucket contains flowers of 
+     * @return true if the bucket contains flowers of
      * the specified type; false otherwise
      */
-    private boolean bucketHasFlowerType(FlowerBucket bucket, FlowerType type) {
+    private boolean bucketHasFlowerType(final FlowerBucket bucket, final FlowerType type) {
         return bucket.getFlowerPacks().stream()
 .anyMatch(pack -> pack.getFlower().getFlowerType() == type);
     }

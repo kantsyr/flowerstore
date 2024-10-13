@@ -32,13 +32,19 @@ public class FlowerTest {
 
     /** Quantity of flowers in a flower pack. */
     private static final int FLOWER_PACK_QUANTITY = 10;
-     /** Total price of a flower pack. */
+    /** Total price of a flower pack. */
     private static final int FLOWER_PACK_PRICE = 500;
 
+    /** The flower instance for testing. */
     private Flower flower;
+
+    /** The instance of a rose flower. */
     private Rose rose;
+    /** The instance of a chamomile flower. */
     private Chamomile chamomile;
+    /** The instance of a tulip flower. */
     private Tulip tulip;
+    /** The flower pack containing a rose. */
     private FlowerPack flowerPack;
 
 
@@ -73,7 +79,6 @@ public class FlowerTest {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
         Assertions.assertEquals("#FF0000", flower.getFlowerColor());
-    
     }
     // Tests for Rose class
     /**

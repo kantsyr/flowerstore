@@ -5,34 +5,34 @@ package flower.store;
 
 public enum FlowerColor {
     /** Yellow color representation. */
-    YELLOW("#FFFF00"), 
+    YELLOW("#FFFF00"),
     /** White color representation. */
-    WHITE("#FFFFFF"), 
+    WHITE("#FFFFFF"),
     /** Orange color representation. */
-    ORANGE("#FFA500"), 
+    ORANGE("#FFA500"),
     /** Pink color representation. */
-    PINK("#FFC0CB"), 
+    PINK("#FFC0CB"),
     /** Purple color representation. */
     PURPLE("#800080"),
     /** Red color representation. */
-    RED("#FF0000"), 
+    RED("#FF0000"),
     /** Blue color representation. */
     BLUE("#0000FF");
     
     /** The string representation of the color. */
-    private final String stringRepresentation;
+    private final String colorCode;
 
     /**
      * Constructs a FlowerColor with the specified string representation.
      *
-     * @param stringRepresentation the string representation of the color
+     * @param colorCode the string representation of the color
      */
-    FlowerColor(final String stringRepresentation) {
-        this.stringRepresentation = stringRepresentation;
+    FlowerColor(final String colorCode) {
+        this.colorCode = colorCode;
     }
 
     @Override
     public String toString() {
-        return stringRepresentation;
+        return colorCode;
     }
 }

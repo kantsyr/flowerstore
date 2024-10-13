@@ -39,13 +39,21 @@ public class FlowerStoreTest {
     /** The initial price for the flower bucket. */
     private static final int BUCKET_INITIAL_PRICE = 650;
 
+    /** The flower instance for a rose. */
     private Flower rose;
+    /** The flower instance for a chamomile. */
     private Flower chamomile;
+    /** The flower instance for a tulip. */
     private Flower tulip;
+    /** The flower pack containing roses. */
     private FlowerPack rosePack;
+    /** The flower pack containing chamomiles. */
     private FlowerPack chamomilePack;
+    /** The flower pack containing tulips. */
     private FlowerPack tulipPack;
+    /** The flower bucket that holds flower packs. */
     private FlowerBucket flowerBucket;
+    /** The store that holds flower buckets. */
     private Store store;
 
     /**

@@ -37,7 +37,7 @@ public class Flower {
      *
      * @param flowerColor the color to set for the flower
      */
-    public void setFlowerColor(FlowerColor flowerColor) {
+    public void setFlowerColor(final FlowerColor flowerColor) {
         this.color = flowerColor;
     }
 
@@ -46,7 +46,7 @@ public class Flower {
      *
      * @param type the type to set for the flower
      */
-    public void setFlowerType(FlowerType type) {
+    public void setFlowerType(final FlowerType type) {
         this.flowerType = type;
     }
 }
