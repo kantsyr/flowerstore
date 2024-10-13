@@ -10,7 +10,8 @@ public class Tulip extends Flower {
      * @param color the color of the tulip; should not be null
      * @param price the price of the tulip; should not be negative
      */
-    public Tulip(final double sepalLength, final FlowerColor color, final double price) {
+    public Tulip(final double sepalLength,
+    final FlowerColor color, final double price) {
         this.setSepalLength(sepalLength);
         this.setColor(color);
         this.setPrice(price);

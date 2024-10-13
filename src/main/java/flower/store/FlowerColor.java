@@ -18,7 +18,7 @@ public enum FlowerColor {
     RED("#FF0000"),
     /** Blue color representation. */
     BLUE("#0000FF");
-    
+
     /** The string representation of the color. */
     private final String colorCode;
 

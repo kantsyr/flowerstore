@@ -1,7 +1,8 @@
 package flower.store;
 
 /**
- * Represents a pack of flowers containing a specific type of flower and its quantity.
+ * Represents a pack of flowers containing
+ *  a specific type of flower and its quantity.
  */
 public class FlowerPack {
     /** The flower contained in this pack. */
