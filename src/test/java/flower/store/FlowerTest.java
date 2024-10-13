@@ -32,7 +32,8 @@ public class FlowerTest {
     public void init() {
         flower = new Flower();
         rose = new Rose(ROSE_SEPAL_LENGTH, FlowerColor.RED, ROSE_PRICE);
-        chamomile = new Chamomile(CHAMOMILE_SEPAL_LENGTH, FlowerColor.WHITE, CHAMOMILE_PRICE);
+        chamomile = new Chamomile(CHAMOMILE_SEPAL_LENGTH,
+        FlowerColor.WHITE, CHAMOMILE_PRICE);
         tulip = new Tulip(TULIP_SEPAL_LENGTH, FlowerColor.PINK, TULIP_PRICE);
         flowerPack = new FlowerPack(rose, FLOWER_PACK_QUANTITY);
     }
@@ -48,7 +49,7 @@ public class FlowerTest {
     public void testColor() {
         FlowerColor color = FlowerColor.RED;
         flower.setColor(color);
-        Assertions.assertEquals("#FF0000", flower.getColor());
+        Assertions.assertEquals("#FF0000", flower.getFlowerColor());
     
     }
     // Tests for Rose class
@@ -59,7 +60,7 @@ public class FlowerTest {
 
     @Test
     public void testRoseColor() {
-        Assertions.assertEquals("#FF0000", rose.getColor());
+        Assertions.assertEquals("#FF0000", rose.getFlowerColor());
     }
 
     @Test
@@ -75,12 +76,13 @@ public class FlowerTest {
     // Tests for Chamomile class
     @Test
     public void testChamomileFlowerType() {
-        Assertions.assertEquals(FlowerType.CHAMOMILE, chamomile.getFlowerType());
+        Assertions.assertEquals(FlowerType.CHAMOMILE,
+        chamomile.getFlowerType());
     }
 
     @Test
     public void testChamomileColor() {
-        Assertions.assertEquals("#FFFFFF", chamomile.getColor());
+        Assertions.assertEquals("#FFFFFF", chamomile.getFlowerColor());
     }
 
     @Test
@@ -102,7 +104,7 @@ public class FlowerTest {
 
     @Test
     public void testTulipColor() {
-        Assertions.assertEquals("#FFC0CB", tulip.getColor());
+        Assertions.assertEquals("#FFC0CB", tulip.getFlowerColor());
     }
 
     @Test

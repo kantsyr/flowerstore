@@ -7,6 +7,23 @@ import org.junit.jupiter.api.Assertions;
 import java.util.List;
 
 public class FlowerStoreTest {
+    private static final double ROSE_SEPAL_LENGTH = 4.0;
+    private static final double CHAMOMILE_SEPAL_LENGTH = 3.5;
+    private static final double TULIP_SEPAL_LENGTH = 5.0;
+
+    private static final int ROSE_PRICE = 50;
+    private static final int CHAMOMILE_PRICE = 30;
+    private static final int TULIP_PRICE = 40;
+
+    private static final int ROSE_PACK_AMOUNT = 10;
+    private static final int CHAMOMILE_PACK_AMOUNT = 5;
+    private static final int TULIP_PACK_AMOUNT = 8;
+
+    private static final int ROSE_PACK_PRICE = 500;
+    private static final int CHAMOMILE_PACK_PRICE = 150;
+    private static final int TULIP_PACK_PRICE = 320;
+    private static final int BUCKET_INITIAL_PRICE = 650;
+
     private Flower rose;
     private Flower chamomile;
     private Flower tulip;
@@ -18,14 +35,14 @@ public class FlowerStoreTest {
 
     @BeforeEach
     public void init() {
-        rose = new Rose(4.0, FlowerColor.RED, 50);
-        chamomile = new Chamomile(3.5, FlowerColor.WHITE, 30);
-        tulip = new Tulip(5.0, FlowerColor.PINK, 40);
+        rose = new Rose(ROSE_SEPAL_LENGTH, FlowerColor.RED, ROSE_PRICE);
+        chamomile = new Chamomile(CHAMOMILE_SEPAL_LENGTH, FlowerColor.WHITE, CHAMOMILE_PRICE);
+        tulip = new Tulip(TULIP_SEPAL_LENGTH, FlowerColor.PINK, TULIP_PRICE);
 
 
-        rosePack = new FlowerPack(rose, 10);
-        chamomilePack = new FlowerPack(chamomile, 5);
-        tulipPack = new FlowerPack(tulip, 8);
+        rosePack = new FlowerPack(rose, ROSE_PACK_AMOUNT);
+        chamomilePack = new FlowerPack(chamomile, CHAMOMILE_PACK_AMOUNT);
+        tulipPack = new FlowerPack(tulip, TULIP_PACK_AMOUNT);
 
 
         flowerBucket = new FlowerBucket();
@@ -40,19 +57,19 @@ public class FlowerStoreTest {
 
     @Test
     public void testFlowerPackPrice() {
-        Assertions.assertEquals(500, rosePack.getPrice());
-        Assertions.assertEquals(150, chamomilePack.getPrice());
+        Assertions.assertEquals(ROSE_PACK_PRICE, rosePack.getPrice());
+        Assertions.assertEquals(CHAMOMILE_PACK_PRICE, chamomilePack.getPrice());
     }
 
     @Test
     public void testFlowerBucketPrice() {
-        Assertions.assertEquals(650, flowerBucket.getPrice());
+        Assertions.assertEquals(BUCKET_INITIAL_PRICE, flowerBucket.getPrice());
     }
 
     @Test
     public void testAddFlowerPack() {
         flowerBucket.addFlowerPack(tulipPack);
-        Assertions.assertEquals(650 + 320, flowerBucket.getPrice());
+        Assertions.assertEquals(BUCKET_INITIAL_PRICE + TULIP_PACK_PRICE, flowerBucket.getPrice());
     }
 
 

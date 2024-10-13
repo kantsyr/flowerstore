@@ -15,11 +15,11 @@ public class Flower {
     @Getter
     private FlowerType flowerType;
 
-    public String getColor() {
+    public String getFlowerColor() {
         return color.toString();
     }
 
-    public void setColor(FlowerColor color) {
+    public void setFlowerColor(FlowerColor color) {
         this.color = color;
     }
 
