@@ -10,6 +10,18 @@ import org.junit.jupiter.api.Assertions;
 public class FlowerTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_PRICE = 100;
+    private static final double ROSE_SEPAL_LENGTH = 2.0;
+    private static final int ROSE_PRICE = 50;
+
+    private static final double CHAMOMILE_SEPAL_LENGTH = 5.5;
+    private static final int CHAMOMILE_PRICE = 30;
+
+    private static final double TULIP_SEPAL_LENGTH = 5.0;
+    private static final int TULIP_PRICE = 40;
+
+    private static final int FLOWER_PACK_QUANTITY = 10;
+    private static final int FLOWER_PACK_PRICE = 500;
+
     private Flower flower;
     private Rose rose;
     private Chamomile chamomile;
@@ -19,10 +31,10 @@ public class FlowerTest {
     @BeforeEach
     public void init() {
         flower = new Flower();
-        rose = new Rose(2.0, FlowerColor.RED, 50);
-        chamomile = new Chamomile(5.5, FlowerColor.WHITE, 30);
-        tulip = new Tulip(5.0, FlowerColor.PINK, 40);
-        flowerPack = new FlowerPack(rose, 10);
+        rose = new Rose(ROSE_SEPAL_LENGTH, FlowerColor.RED, ROSE_PRICE);
+        chamomile = new Chamomile(CHAMOMILE_SEPAL_LENGTH, FlowerColor.WHITE, CHAMOMILE_PRICE);
+        tulip = new Tulip(TULIP_SEPAL_LENGTH, FlowerColor.PINK, TULIP_PRICE);
+        flowerPack = new FlowerPack(rose, FLOWER_PACK_QUANTITY);
     }
 
     @Test
@@ -115,6 +127,6 @@ public class FlowerTest {
 
     @Test
     public void testFlowerPackTotalPrice() {
-        Assertions.assertEquals(500, flowerPack.getPrice());
+        Assertions.assertEquals(FLOWER_PACK_PRICE, flowerPack.getPrice());
     }
 }
