@@ -27,8 +27,8 @@ public enum FlowerColor {
      *
      * @param colorCode the string representation of the color
      */
-    FlowerColor(final String colorCode) {
-        this.colorCode = colorCode;
+    FlowerColor(final String code) {
+        this.colorCode = code;
     }
 
     @Override

@@ -16,9 +16,9 @@ public class FlowerPack {
      * @param flower the flower contained in the pack, must not be null
      * @param amount the number of flowers in the pack, must be positive
      */
-    public FlowerPack(final Flower flower, final int amount) {
-        this.flower = flower;
-        this.amount = amount;
+    public FlowerPack(final Flower flowerParam, final int amountParam) {
+        this.flower = flowerParam;
+        this.amount = amountParam;
     }
 
     /**
