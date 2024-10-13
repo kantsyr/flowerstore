@@ -13,11 +13,11 @@ public class FlowerPack {
         return flower;
     }
 
-    public int getQuantity() {
+    public int getAmount() {
         return amount;
     }
 
-    public double getTotalPrice() {
+    public double getPrice() {
         return flower.getPrice() * amount;
     }
 }

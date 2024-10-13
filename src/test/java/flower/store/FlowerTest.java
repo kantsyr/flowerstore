@@ -110,11 +110,11 @@ public class FlowerTest {
 
     @Test
     public void testFlowerPackQuantity() {
-        Assertions.assertEquals(10, flowerPack.getQuantity());
+        Assertions.assertEquals(10, flowerPack.getAmount());
     }
 
     @Test
     public void testFlowerPackTotalPrice() {
-        Assertions.assertEquals(500, flowerPack.getTotalPrice());
+        Assertions.assertEquals(500, flowerPack.getPrice());
     }
 }
