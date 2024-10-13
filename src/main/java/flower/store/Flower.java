@@ -19,11 +19,11 @@ public class Flower {
         return color.toString();
     }
 
-    public void setFlowerColor(FlowerColor color) {
-        this.color = color;
+    public void setFlowerColor(FlowerColor flowerColor) {
+        this.color = flowerColor;
     }
 
-    public void setFlowerType(FlowerType flowerType) {
-        this.flowerType = flowerType;
-}
+    public void setFlowerType(FlowerType type) {
+        this.flowerType = type;
+    }
 }

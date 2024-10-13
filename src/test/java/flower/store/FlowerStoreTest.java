@@ -36,7 +36,8 @@ public class FlowerStoreTest {
     @BeforeEach
     public void init() {
         rose = new Rose(ROSE_SEPAL_LENGTH, FlowerColor.RED, ROSE_PRICE);
-        chamomile = new Chamomile(CHAMOMILE_SEPAL_LENGTH, FlowerColor.WHITE, CHAMOMILE_PRICE);
+        chamomile = new Chamomile(CHAMOMILE_SEPAL_LENGTH,
+         FlowerColor.WHITE, CHAMOMILE_PRICE);
         tulip = new Tulip(TULIP_SEPAL_LENGTH, FlowerColor.PINK, TULIP_PRICE);
 
 
@@ -69,7 +70,8 @@ public class FlowerStoreTest {
     @Test
     public void testAddFlowerPack() {
         flowerBucket.addFlowerPack(tulipPack);
-        Assertions.assertEquals(BUCKET_INITIAL_PRICE + TULIP_PACK_PRICE, flowerBucket.getPrice());
+        Assertions.assertEquals(BUCKET_INITIAL_PRICE + TULIP_PACK_PRICE,
+         flowerBucket.getPrice());
     }
 
 
