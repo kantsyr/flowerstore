@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * Represents a bucket that holds flower packs.
  */
-public class FlowerBucket {final
-    private List<FlowerPack> flowerPacks = new ArrayList<>();
+public class FlowerBucket {
+    private final List<FlowerPack> flowerPacks = new ArrayList<>();
 
     /**
      * Adds a flower pack to the bucket.

@@ -10,7 +10,8 @@ public class Rose extends Flower {
      * @param color the color of the rose
      * @param price the price of the rose
      */
-    public Rose(final double sepalLength, final FlowerColor color, final double price) {
+    public Rose(final double sepalLength, 
+    final FlowerColor color, final double price) {
         this.setSepalLength(sepalLength);
         this.setColor(color);
         this.setPrice(price);
