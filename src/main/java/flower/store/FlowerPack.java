@@ -2,11 +2,11 @@ package flower.store;
 
 public class FlowerPack {
     private Flower flower;
-    private int quantity;
+    private int amount;
 
-    public FlowerPack(Flower flower, int quantity) {
+    public FlowerPack(Flower flower, int amount) {
         this.flower = flower;
-        this.quantity = quantity;
+        this.amount = amount;
     }
 
     public Flower getFlower() {
@@ -14,10 +14,10 @@ public class FlowerPack {
     }
 
     public int getQuantity() {
-        return quantity;
+        return amount;
     }
 
     public double getTotalPrice() {
-        return flower.getPrice() * quantity;
+        return flower.getPrice() * amount;
     }
 }
